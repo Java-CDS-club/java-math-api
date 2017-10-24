@@ -5,11 +5,12 @@ public class Mathematics {
     Author author;
     String hostname,root,calcRoot,algebraRoot,geometryRoot,physicsRoot;
 
-    Algebra algebra = new Algebra();
+    Algebra algebra;
     private Links links;
     public Mathematics(String hostname){
         this.links = new Links(hostname);
         this.author = new Author();
+        this.algebra =   new Algebra(hostname);
 
 
 
